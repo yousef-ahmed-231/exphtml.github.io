@@ -1,0 +1,256 @@
+/*general*/
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix{
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.parent{
+  width: 1180px;
+  margin: auto;
+}
+.background{
+  background: url(https://goldwallpapers.com/uploads/posts/bmw-m5-wallpaper/bmw_m5_wallpaper_014.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+div{
+  display: block;
+} */
+/*end general*/
+/*head*/
+/* .head .firstnav .parent .logo{
+  text-align: center;
+  font-size: 50px;
+
+}
+.head .firstnav .parent .links{
+  text-align: center;
+}
+.head .firstnav .parent h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #0653b6;
+} */
+
+/*end head*/
+/*form*/
+/* .form{
+  width: 400px;
+  margin:0 auto;
+
+}
+
+.text{
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  border-bottom: 2px solid #0653b6;
+  color: white;
+}
+.text input{
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  width: 100%;
+}
+.form .text .but{
+  padding: 10px;
+  width:100%
+}
+
+.text1{
+  text-align: center;
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  margin: 10px 0 10px 0 ;
+  border: 2px solid #0653b6;
+}
+.form .text1 :hover{
+   font-size: 20px;
+}
+.form select{
+  background: none;
+  width: 100%;
+  font-size: 20px;
+  color: #d9d9d9;
+  border: none;
+  outline: none;
+}
+.message {
+  color: #d9d9d9;
+  margin: 5px;
+}
+.message p {
+  font-size: 15px;
+}
+.message h3{
+ font-size: 20px
+}
+.sub{
+  background: none;
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  color: white;
+} */
+/*end form*/
+/*////////////////////////////////////////////////////////////*/
+/* @media only screen and (max-width:1180px) {
+  .head .headcontent{
+    width:100%;
+    padding:0 10px;
+    }
+    .head .firstnav .parent{
+      width: 100%
+    }
+    .head .firstnav .parent .links li{
+      margin-left:4px;
+    }
+    .background{
+      background-size:100% 100%;
+    }
+}
+@media only screen and (max-width:421px) {
+  .form{
+    width: 200px;
+}
+} */
+/* From Uiverse.io by ammarsaa */ 
+/* From Uiverse.io by bociKond */ 
+/* From Uiverse.io by aboalsim114 */ 
+
+/* From Uiverse.io by R1SH4BH81 */ 
+/* Form Container */
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+  border-radius: 15px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px); /* Glassy blur effect */
+  box-shadow:
+    rgba(0, 0, 0, 0.6) 0px 2px 4px,
+    rgba(0, 0, 0, 0.5) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+  animation: form-animation 0.5s ease-in-out;
+}
+
+@keyframes form-animation {
+  from {
+    transform: rotateX(-30deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+/* Glassy Black Input */
+.input {
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Light border to enhance the glass look */
+  backdrop-filter: blur(8px); /* Glassy blur */
+  box-shadow:
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 7px 13px rgba(0, 0, 0, 0.3),
+    inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition:
+    border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.input:hover,
+.input:focus {
+  border-color: rgba(255, 255, 255, 0.4); /* Brightened border on hover/focus */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Darker glassy background on hover/focus */
+  transform: scale(1.05) rotateY(20deg);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/* Button Style */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6); /* Dark button background */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    rgba(0, 0, 0, 0.5) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly lighter hover effect */
+  font-size: 17px;
+  transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+  box-shadow:
+    rgba(0, 0, 0, 0.5) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+}
+.form-section {
+  margin-left: 5px;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: .85rem;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0066ff;
+  transition: color .3s ease;
+}
+
+.form-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}

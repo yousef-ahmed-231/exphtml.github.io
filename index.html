@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html style="background-color: #212121">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>BMW.com</title>
+    <link
+      rel="icon"
+      type="img/png"
+      href="https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white-grey.png"
+    />
+    <link rel="stylesheet" href="formstyle.css" />
+    <script type="module" src="register.js" defer></script>
+  </head>
+  <body>
+    <!-- start head -->
+    <!-- <header class="head">
+      <nav class="firstnav">
+        <div class="parent">
+            <h2 class="logo">B M W</h2>
+
+        </div>
+      </nav>
+      </header>
+    
+
+    <div class="form">
+      <form onsubmit="return validatePassword()" action="action.php" target="_blank" method="post">
+
+          <div class="text">
+            <input type="text" pattern="^[A-Za-z]+$" placeholder="First name" required>
+          </div>
+
+          <div class="text">
+            <input type="text" pattern="^[A-Za-z]+$" placeholder="Last name" required>
+          </div>
+
+          <div class="text">
+            <input type="text" pattern="^\d{10,}$" placeholder="Phone number" required>
+          </div>
+
+          <div class="text">
+            <input type="text"  placeholder="address" required>
+          </div>
+
+          <div class="text">
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required>
+          </div>
+
+          <div class="text">
+            <div class="text">
+              <input type="password" placeholder="password" id="psw" required>
+            </div>
+
+            <div class="message">
+              <h3>Password must contain the following:</h3>
+              <p >- Must be<b> 8 characters</b></p>
+              <p >- <b>small</b> letters </p>
+              <p >- A <b>digit</b></p>
+              <p >- <b>special characters</b></p>
+              <p >- <b>start with capital </b>letters </p>
+              <p >- <b>no spaces </b></p>
+
+            </div>
+          </div>
+          <div class="text">
+            <select id="gender" name="gender">
+              <option  value="none" selected="">Choose</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+
+            </select>
+          </div>
+
+          <div class="text1">
+            <input class="sub" type="submit" name="submit" value="submit">
+          </div>
+
+          <div class="clearfix"></div>
+          </form>
+    </div>
+  </div>
+
+  <script>
+    function validatePassword() {
+    var p = document.getElementById('psw').value;
+    var gen = document.getElementById('gender').value;
+    errors = [];
+    if (p.length != 8) {
+    errors.push("Your password must be 8 characters");
+    }
+    if (p.search(/[a-z]/i) < 0) {
+    errors.push("Your password must contain at least one letter.");
+    }
+    if (p.search(/[0-9]/) < 0) {
+    errors.push("Your password must contain at least one digit.");
+    }
+    if(p.search(/[!@#$%^&*]/i) < 0){
+       errors.push("Your password must contain at least one special character.");
+    }
+    if(p.search(" ") > 0){
+       errors.push("Your password must contain no space.");
+    }
+    if(p[0] != p[0].toUpperCase() ){
+       errors.push("Your password must start with capital.");
+    }
+    if(gen == "none"){
+       errors.push("select your gender.");
+    }
+
+
+    if (errors.length > 0) {
+        alert(errors.join("\n"));
+        return false;
+    }else{
+      alert('WELCOME TO OUR SITE\nCLICK OK TO CONTINUE :D');
+      window.location.href = 'project1.html';
+      return true;
+    }
+
+  } -->
+    <!-- From Uiverse.io by ammarsaa -->
+
+    <div style="margin-inline: 33%">
+      <img
+        src="pngimg.com - bmw_logo_PNG19707.png"
+        style="
+          width: 100px;
+          height: 100px;
+          margin-left: 80px;
+          margin-bottom: 50px;
+          margin-top: 50px;
+        "
+      />
+
+      <img
+        src="[CITYPNG.COM]HD BMW Motorsport M Logo Sign PNG - 2000x2000.png"
+        style="width: 200px; height: 200px"
+      />
+    </div>
+
+    <form
+      class="form"
+      style="width: 250px; margin-inline: 38.5%; margin-top: 40px"
+    >
+
+    <h1 style="color: white;
+              text-align: center;
+              font-family: sans-serif;">SIGN UP</h1>
+      <input
+        placeholder="Enter your email"
+        class="input"
+        type="text"
+        id="email"
+      />
+      <input
+        placeholder="*********"
+        class="input"
+        type="password"
+        id="password"
+      />
+
+      <button type="submit" id="submit">SUBMIT</button>
+
+      <div class="form-section">
+        <p>Have an account? <a href="index2.html">Log in</a></p>
+      </div>
+    </form>
+
+    <!-- </script> -->
+  </body>
+</html>
